@@ -1,0 +1,5 @@
+
+]
+java:S2259="BA "NullPointerException" could be thrown; "game" is nullable here.(î­°Òøÿÿÿÿ
+°
+java:S4449;"”Annotate the parameter with @javax.annotation.Nullable in method 'copyProperties' declaration, or make sure that null can not be passed as argument.(¨£Þ‘ûÿÿÿÿ

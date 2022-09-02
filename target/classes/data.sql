@@ -21,9 +21,11 @@ INSERT INTO CLIENT(id, name) VALUES (2, 'Cliente 2');
 INSERT INTO CLIENT(id, name) VALUES (3, 'Cliente 3');
 INSERT INTO CLIENT(id, name) VALUES (4, 'Cliente 4');
 INSERT INTO CLIENT(id, name) VALUES (5, 'Cliente 5');
+INSERT INTO CLIENT(id, name) VALUES (6, 'Cliente 6');
 
-INSERT INTO PRESTAMO(id, title, client, prestamo_date, dev_date) VALUES (1, 'Juego 1', 'CLIENTE 1', '2022-01-01', '2022-01-01');
-INSERT INTO PRESTAMO(id, title, client, prestamo_date, dev_date) VALUES (2, 'Juego 2', 'CLIENTE 2', '2022-01-01', '2022-01-01');
-INSERT INTO PRESTAMO(id, title, client, prestamo_date, dev_date) VALUES (3, 'Juego 3', 'CLIENTE 3', '2022-01-01', '2022-01-01');
-INSERT INTO PRESTAMO(id, title, client, prestamo_date, dev_date) VALUES (4, 'Juego 4', 'CLIENTE 4', '2022-01-01', '2022-01-01');
-INSERT INTO PRESTAMO(id, title, client, prestamo_date, dev_date) VALUES (5, 'Juego 5', 'CLIENTE 5', '2022-01-01', '2022-01-01');
+INSERT INTO LOAN (id, game_id, client_id, loan_date, dev_date) VALUES (1, 1, 1, '2022-01-01', '2022-12-01');
+INSERT INTO LOAN (id, game_id, client_id, loan_date, dev_date) VALUES (2, 2, 2, '2022-01-01', '2022-01-01');
+INSERT INTO LOAN (id, game_id, client_id, loan_date, dev_date) VALUES (3, 3, 3, '2022-01-01', '2022-01-01');
+INSERT INTO LOAN (id, game_id, client_id, loan_date, dev_date) VALUES (4, 5, 4, '2022-01-01', '2022-01-01');
+INSERT INTO LOAN (id, game_id, client_id, loan_date, dev_date) VALUES (5, 5, 5, '2022-01-01', '2022-01-01');
+INSERT INTO LOAN (id, game_id, client_id, loan_date, dev_date) VALUES (6, 6, 6, '2022-01-01', '2022-01-01');

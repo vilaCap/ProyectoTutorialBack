@@ -2,6 +2,7 @@ package com.ccsw.tutorial.game;
 
 import java.util.List;
 
+import com.ccsw.tutorial.client.model.Client;
 import com.ccsw.tutorial.game.model.Game;
 import com.ccsw.tutorial.game.model.GameDto;
 
@@ -17,6 +18,8 @@ public interface GameService {
      * @return
      */
     List<Game> find(String title, Long idCategory);
+
+    Game get(Long id);
 
     /**
      * Guarda o modifica un juego, dependiendo de si el id está o no informado
