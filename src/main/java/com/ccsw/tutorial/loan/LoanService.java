@@ -30,7 +30,7 @@ public interface LoanService {
      */
     List<Loan> find(Long game_id, Long client_id, LocalDate loanDate);
 
-    Page<Loan> findPage(LoanSearchDto dto);
+    Page<Loan> findPage(Long game_id, Long client_id, Date loanDate, LoanSearchDto dto);
 
     /**
      * Guarda o modifica un juego, dependiendo de si el id está o no informado

@@ -52,8 +52,8 @@ public class LoanServiceImpl implements LoanService {
      * {@inheritDoc}
      */
     @Override
-    public Page<Loan> findPage(LoanSearchDto dto){
-        return this.loanRepository.findAll(dto.getPageable());
+    public Page<Loan> findPage(Long game_id, Long client_id, Date loanDate,LoanSearchDto dto){
+        return this.loanRepository.findPage(game_id, client_id, loanDate, dto.getPageable());
     }
 
 

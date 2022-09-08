@@ -32,13 +32,30 @@ public class LoanController {
     BeanMapper beanMapper;
 
     @RequestMapping(path = "", method = RequestMethod.POST)
-    public Page<LoanDto> findPage(@RequestBody LoanSearchDto dto) {
+    public Page<LoanDto> findPage(@RequestParam(value = "game_id", required = false) Long game,
+                                  @RequestParam(value = "client_id", required = false) Long client,
+                                  @RequestParam(value = "loan_date", required = false) Date loanDate,
+                                  @RequestBody LoanSearchDto dto) {
 
-        return this.beanMapper.mapPage(this.loanService.findPage(dto), LoanDto.class);
+        return this.beanMapper.mapPage(this.loanService.findPage(game, client, loanDate, dto), LoanDto.class);
     }
 
     @RequestMapping(path = "", method = RequestMethod.GET)
     public List<LoanDto> find(@RequestParam(value = "game_id", required = false) Long game,
+                              @RequestParam(value = "client_id", required = false) Long client,
+                              @RequestParam(value = "loan_date", required = false) Date loanDate) {
+        LocalDate date = null;
+
+        if(loanDate != null) {
+            date = loanDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        }
+
+        List<Loan> loans = loanService.find(game, client, date);
+        return beanMapper.mapList(loans, LoanDto.class);
+    }
+
+    @RequestMapping(path = "/find", method = RequestMethod.POST)
+    public List<LoanDto> findSearch(@RequestParam(value = "game_id", required = false) Long game,
                               @RequestParam(value = "client_id", required = false) Long client,
                               @RequestParam(value = "loan_date", required = false) Date loanDate) {
         LocalDate date = null;

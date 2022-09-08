@@ -1,5 +1,0 @@
-
-k	java:S117R"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÅÀÅøÿÿÿÿ
-k	java:S117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ…ÈÇûÿÿÿÿ
-u	java:S116"TRename this field "loan_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËàèÃøÿÿÿÿ8ë½ïİª0
-h	java:S116"SRename this field "dev_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–öÑ

@@ -26,4 +26,9 @@ public interface LoanRepository extends CrudRepository<Loan, Long> {
      */
     Page<Loan> findAll(Pageable pageable);
 
+    @Query("select l from Loan l where (:game_id is null or l.game.id = :game_id)" +
+            " and (:client_id is null or l.client.id = :client_id)" +
+            " and (:loanDate is null or (:loanDate between l.loanDate and l.devDate))")
+    Page<Loan> findPage(@Param("game_id") Long game_id, @Param("client_id") Long client_id, @Param("loanDate") Date loanDate,  Pageable pageable);
+
 }

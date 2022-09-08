@@ -1,7 +1,0 @@
-
-c
-java:S4488""HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(™šœßýÿÿÿÿ
-^
-java:S4488-"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(äÆ›ÿ
-d
-java:S44887"NReplace "@RequestMapping(method = RequestMethod.DELETE)" with "@DeleteMapping"(âÚýØ

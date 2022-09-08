@@ -1,18 +1,12 @@
 
-l
-<src/main/java/com/ccsw/tutorial/client/ClientController.java,7\4\74cfe95ab4be5dc3b222ee87b30d57b47b2ef1f6
 m
 =src/main/java/com/ccsw/tutorial/config/mapper/BeanMapper.java,7\3\73ef2e12bfe6b9fa34c62ec11d6a2770a7582a29
 q
 Asrc/main/java/com/ccsw/tutorial/author/model/AuthorSearchDto.java,c\2\c2bec44d0e173f20d5efd3bfc6bdf7090b9aebd8
 m
 =src/main/java/com/ccsw/tutorial/author/AuthorServiceImpl.java,d\e\de023747769a13b3ebfc8f03ff85368cb68582de
-m
-=src/main/java/com/ccsw/tutorial/loan/model/LoanSearchDto.java,1\0\10417c006abc1cb733977d1c594569c8fe56076d
 k
 ;src/main/java/com/ccsw/tutorial/client/model/ClientDto.java,c\2\c2c08d8d9f4ab79b92c3091ca94f87922036611a
-g
-7src/main/java/com/ccsw/tutorial/loan/model/LoanDto.java,0\6\067eca7331afa3e90278bbdd4852459997787e95
 g
 7src/main/java/com/ccsw/tutorial/game/model/GameDto.java,7\0\700cea03508b814f38dabbbafecda49a90eea03e
 i
@@ -39,3 +33,5 @@ l
 <src/main/java/com/ccsw/tutorial/author/AuthorController.java,0\6\06f738a7468822593a8529ae7849a0d779955c29
 l
 <src/main/java/com/ccsw/tutorial/author/AuthorRepository.java,4\f\4fc50f7da979a0ee492dfd4911acb8a1dd05b369
+d
+4src/main/java/com/ccsw/tutorial/loan/model/Loan.java,9\4\944d70e3ff25e539cb53146c1ce408850804e2a0
